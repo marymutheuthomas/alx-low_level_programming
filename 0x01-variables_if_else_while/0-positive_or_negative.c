@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/** 
+* main - Test whether a rand number outputs(positive, negative or zero value)
+* Return: Return (0) 
+*/
 int main(void)
 {
 	int n;
