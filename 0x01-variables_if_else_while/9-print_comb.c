@@ -7,12 +7,19 @@
 
 int main(void)
 {
-	int number = 0;
+	int digit = 0;
 
-	while (number <= 9)
+	while (digit <= 9)
 	{
-		putchar(number + '0' + ',');
-		number++;
+		putchar(digit + 48);
+
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		++digit;
 	}
 	putchar('\n');
 
