@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/** 
+/**
 * main - Test whether a rand number outputs(positive, negative or zero value)
-* Return: Return (0) 
+* Return: return 0
 */
 int main(void)
 {
