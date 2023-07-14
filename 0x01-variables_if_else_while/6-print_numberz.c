@@ -6,9 +6,12 @@
 int main(void)
 {
 	int number = 0;
-	while (number < 10)
+
+	while (number <= 9)
 	{
-		print("%d", number);
+		putchar(number + '0');
 		number++;
 	}
-	p
+	putchar('\n');
+	return (0);
+}
