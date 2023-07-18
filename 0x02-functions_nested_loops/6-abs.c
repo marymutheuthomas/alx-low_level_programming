@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * int _abs - calculate the abs of a number
+ * _abs - calculate the abs of a number
  * Return: zero
  * @n: take a rand number
  */
