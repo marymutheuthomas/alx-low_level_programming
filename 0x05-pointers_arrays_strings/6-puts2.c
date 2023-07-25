@@ -9,14 +9,18 @@
 
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (str == NULL)
 	{
-		if (str[i] % 2 == 0)
-		{
-			_putchar(str[i]);
-		}
+		printf("Error: Input string is NULL.\n");
+		return;
 	}
-	_putchar('\n');
+
+	while (str[i] != '\0')
+	{
+		printf("%c", str[i]);
+		i += 2;
+	}
+	printf("\n");
 }
