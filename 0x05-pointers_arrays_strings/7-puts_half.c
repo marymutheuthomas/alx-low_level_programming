@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int midpoint = length / 2;
 	int i;
 
-	for (i = midpoint; str[i] != '\0'; i++)
+	for (i = midpoint; i < length; i++)
 	{
 		_putchar(str[i]);
 	}
