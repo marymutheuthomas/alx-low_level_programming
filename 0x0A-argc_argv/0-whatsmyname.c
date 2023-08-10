@@ -14,12 +14,13 @@ int main(int argc, char *argv[])
 	{
 		char *programName = argv[0];
 		char *lastSlash = strrchr(programName, '/');
+
 		if (lastSlash != NULL)
 		{
 			programName = lastSlash + 1;
 		}
 		printf("Program name: %s\n", programName);
 	}
-	return 0;
+	return (0);
 }
 
