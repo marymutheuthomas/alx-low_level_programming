@@ -1,26 +1,19 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
- * main - program that prints its name
- * @argc: argument count
- * @argv: argument vector
- * Return: program name
- */
+ * main- a program that prints its name
+ *
+ * @argc: holds the number of arguments passed
+ * @argv: array pointer that holds the arguments passed
+ *
+ * Return: Always 0 (Success)
+*/
 
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	if (argc >= 1)
-	{
-		char *programName = argv[0];
-		char *lastSlash = strrchr(programName, '/');
+	int i = 0;
 
-		if (lastSlash != NULL)
-		{
-			programName = lastSlash + 1;
-		}
-		printf("Program name: %s\n", programName);
-	}
+	printf("%s\n", argv[i]);
 	return (0);
 }
-
