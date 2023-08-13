@@ -5,7 +5,7 @@
 
 
 /**
- * string_nconcat: allocate new memoryand concate s1 s2
+ * string_nconcat -  allocate new memoryand concate s1 s2
  * @s1: string 1
  * @s2: string 2
  * @n: length of s2 to concate
