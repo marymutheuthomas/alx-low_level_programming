@@ -1,3 +1,5 @@
+#include"main.h"
+
 /**
  * _abs - finds the absolute number
  * @n: number to find abs

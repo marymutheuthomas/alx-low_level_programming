@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include"main.h"
 
 /**
  * isupper - a funcion to check if an alphabet is upper or lower
