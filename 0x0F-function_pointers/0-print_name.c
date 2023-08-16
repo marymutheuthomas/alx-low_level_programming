@@ -1,5 +1,7 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include"function_pointers.h"
+
 /**
  * print_name - print name as is and as uppercase
  * @name: pointer to the address where the anem is stored
@@ -8,6 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name != NULL && f != NULL)
+		f(name);
 }
 
