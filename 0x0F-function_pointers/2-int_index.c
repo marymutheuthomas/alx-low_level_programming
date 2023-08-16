@@ -1,4 +1,5 @@
 #include"function_pointers.h"
+#include<stddef.h>
 
 /**
  * int_index - function to return index of a item
@@ -21,7 +22,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for  (i = 0; i < size; i++)
 		{
-			if (cmp(array[i]) != 0)
+			y = cmp(array[i]) != 0;
+			if ( y == TRUE)
 			{
 				return i;
 			}
