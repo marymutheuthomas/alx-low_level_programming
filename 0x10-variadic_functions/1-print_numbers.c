@@ -12,18 +12,17 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int index;
+	va_list mylist;
+	unsigned int i;
 
-	/* initialize the argument list from the start */
-	va_start(ap, n);
+	va_start(mylist, n);
 
-	for (index = 0; index < n; index++)
+	for (i= 0; i < n; i++)
 	{
-		printf("%d", va_arg(ap, int));
+		printf("%d", va_arg(mylist, int));
 		if (separator && index != n - 1)
 			printf("%s", separator);
 	}
-	va_end(ap);
+	va_end(mylist);
 	printf("\n");
 }
