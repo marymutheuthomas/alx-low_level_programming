@@ -1,6 +1,4 @@
-#include<stdio.h>
 #include"lists.h"
-#include<stdlib.h>
 
 /**
  * print_list - futcion to print the elements of a linked list
