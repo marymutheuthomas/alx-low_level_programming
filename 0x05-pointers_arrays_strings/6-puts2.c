@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdlib.h>
 #include<string.h>
 
 
@@ -9,22 +10,21 @@
 
 void puts2(char *str)
 {
-	int i = 0, length;
+	int i = 0; 
 
-	length = strlen(*str);
 	if (str == NULL)
 	{
 		printf("Error: Input string is NULL.\n");
 		return;
 	}
 
-	while (*str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if (atoi(*s[i]) % 2 == 0)
-		{
-			printf("%c", str[i]);
+		printf("%c", str[i]);
+		i++;
+		if (str[i] != '\0')
 			i++;
-		}
 	}
 	printf("\n");
 }
+
