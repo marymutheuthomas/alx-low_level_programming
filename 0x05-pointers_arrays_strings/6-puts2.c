@@ -9,8 +9,9 @@
 
 void puts2(char *str)
 {
-	int i = 0;
+	int i = 0, length;
 
+	length = strlen(*str);
 	if (str == NULL)
 	{
 		printf("Error: Input string is NULL.\n");
@@ -20,7 +21,7 @@ void puts2(char *str)
 	while (str[i] != '\0')
 	{
 		printf("%c", str[i]);
-		i += 2;
+		i++;
 	}
 	printf("\n");
 }
