@@ -20,8 +20,11 @@ void puts2(char *str)
 
 	while (*str[i] != '\0')
 	{
-		printf("%c", str[i]);
-		i++;
+		if (atoi(*s[i]) % 2 == 0)
+		{
+			printf("%c", str[i]);
+			i++;
+		}
 	}
 	printf("\n");
 }
