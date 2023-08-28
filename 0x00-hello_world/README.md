@@ -1,5 +1,5 @@
 # 0x00. C - Hello, World
-![logo](https://github.com/marymutheuthomas/images/blob/main/The%20Wedding%20Of.gif)
+![logo](https://github.com/marymutheuthomas/images/blob/main/The%20Wedding%20Of%20(1).gif)
 ## Tasks
 1. [0-preprocessor](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
    - Write a script that runs a C file through the preprocessor and saves the result into another file.
