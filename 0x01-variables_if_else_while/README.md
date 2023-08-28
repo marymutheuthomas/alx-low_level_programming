@@ -19,7 +19,7 @@
 8. [7-print_tebahpla.c](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)
    - Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 9. [8-print_base16.c](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c)
-    Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
+   - Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 10. [9-print_comb.c](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c)
     - Write a program that prints all possible combinations of single-digit numbers.
 11. [100-print_comb3.c](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c)
