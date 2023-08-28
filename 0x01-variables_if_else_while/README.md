@@ -28,4 +28,3 @@
     - Write a program that prints all possible different combinations of three digits.
 13. [102-print_comb5.c](https://github.com/marymutheuthomas/alx-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c)
     - Write a program that prints all possible combinations of two two-digit numbers.
-    - 
