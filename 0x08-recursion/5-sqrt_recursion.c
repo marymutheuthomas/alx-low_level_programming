@@ -10,23 +10,24 @@
 int _sqrt_recursive(int n, int start, int end)
 {
 	int mid, square;
+
 	if (start > end)
 	{
-		return -1;
+		return (-1);
 	}
 	mid = start + (end - start) / 2;
 	square = mid * mid;
 	if (square == n)
 	{
-		return mid;
+		return (mid);
 	}
 	else if (square < n)
 	{
-		return _sqrt_recursive(n, mid + 1, end);
+		return (_sqrt_recursive(n, mid + 1, end));
 	}
 	else
 	{
-		return _sqrt_recursive(n, start, mid - 1);
+		return (_sqrt_recursive(n, start, mid - 1));
 	}
 }
 
@@ -40,8 +41,8 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
-		return -1;
+		return (-1);
 	}
-	return _sqrt_recursive(n, 0, n);
+	return (_sqrt_recursive(n, 0, n));
 }
 
