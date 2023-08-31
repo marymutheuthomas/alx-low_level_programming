@@ -6,6 +6,7 @@
  * @s: string to test
  * @start: index to start test
  * @end: index to also start test on the other end
+ * Return: -1 or 1
  */
 
 int _check_palindrome(char s[], int start, int end)
