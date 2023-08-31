@@ -15,7 +15,7 @@ int _check_palindrome(char s[], int start, int end)
 	start = 0;
 	end = length - 1;
 
-	if (s[start] == s[end] || length == 0)
+	if (s[start] == s[end] || s[length] == 0)
 		return (1);
 	if (s[start] != s[end])
 		return (-1);
