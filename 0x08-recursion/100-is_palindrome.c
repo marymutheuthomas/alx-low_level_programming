@@ -19,7 +19,7 @@ int _check_palindrome(char s[], int start, int end)
 		return (1);
 	if (s[start] != s[end])
 		return (-1);
-	return (_check_palindrome(*s, start + 1, end - 1));
+	return (_check_palindrome(s, start + 1, end - 1));
 }
 
 /**
@@ -30,7 +30,7 @@ int _check_palindrome(char s[], int start, int end)
 
 int is_palindrome(char *s)
 {
-	int length = strlen(str);
+	int length = strlen(s);
 
-	return (_check_palindrome(*s, 0, length - 1));
+	return (_check_palindrome(s, 0, length - 1));
 }
