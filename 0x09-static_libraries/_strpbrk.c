@@ -10,13 +10,14 @@
 char *_strpbrk(char *s, char *accept)
 {
 	if (s == NULL || accept == NULL)
-       	{
-		return NULL;
+	{
+		return (NULL);
 	}
-	while(*s != '\0')
+	while (*s != '\0')
 	{
 		char *next = accept;
-		while(*next != '\0')
+
+		while (*next != '\0')
 		{
 			if (*s == *next)
 			{

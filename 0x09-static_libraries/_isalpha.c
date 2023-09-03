@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 /**
- * _isaplha - function to check if a character is an alphabet
+ * _isalpha - function to check if a character is an alphabet
  * @c: character to check
  * Return: (1) or (0)
  */

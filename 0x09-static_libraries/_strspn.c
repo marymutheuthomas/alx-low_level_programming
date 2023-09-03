@@ -10,10 +10,12 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	size_t length = 0;
+
 	while (*s != '\0')
 	{
 		char *temp_accept = accept;
-		while(*temp_accept != '\0')
+
+		while (*temp_accept != '\0')
 		{
 			if (*s == *temp_accept)
 			{

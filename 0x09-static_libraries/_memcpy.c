@@ -1,10 +1,11 @@
 #include"main.h"
 
 /**
- * _memecpy - fucntion to copy from one block of memeory to another
+ * _memcpy - fucntion to copy from one block of memeory to another
  * @dest: location to copy to
  * @src: where to copy from
  * @n: no of bytes to copy from src
+ * Return: pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -14,9 +15,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	if (dest == NULL || src == NULL)
 	{
 		perror("Memory allocation failed");
-		return NULL;
+		return (NULL);
 	}
-	while(i < n)
+	while (i < n)
 	{
 		dest[i] = src[i];
 		i++;
