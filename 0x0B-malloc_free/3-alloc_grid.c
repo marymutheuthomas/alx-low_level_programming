@@ -1,45 +1,39 @@
-#include"main.h"
+#include <stdlib.h>
 
 /**
- * alloc_grid - function that returns a pointer to a 2 dm array of int
- * @width: width of the array
- * @height: height of the array
- * Return - pointer to new allcoated memory
+ * alloc_grid - function that returns a pointer to 2dm array of integers.
+ * @width: width
+ * @height: height
+ *
+ * Return: NULL or pointer to new grid allocated
  */
 
 int **alloc_grid(int width, int height)
 {
-	int i, j;
-	int **new_memory;
+	int **grid, i, j;
 
-	if (height <= 0 || width <= 0)
-	{
+	if (width <= 0 || height <= 0)
 		return (NULL);
-	}
-	new_memory = (int **)malloc(sizeof(int) * height);
-	if (new_memory == NULL)
-	{
+
+	grid = malloc(height * sizeof(int *));
+	if (grid == NULL)
 		return (NULL);
-	}
 
 	for (i = 0; i < height; i++)
 	{
-		new_memory[i] = (int *)malloc(sizeof(int) * width);
-		if (new_memory[i] == NULL)
+		grid[i] = malloc(width * sizeof(int));
+		if (grid[i] == NULL)
 		{
-			for (i = 0; i < height; i--)
+			while (i >= 0)
 			{
-				free(new_memory[i]);
+				free(grid[i]);
+				i--;
 			}
-			free(new_memory);
+			free(grid);
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
-		{
-			new_memory[i][j] = 0;
-		}
-
+			grid[i][j] = 0;
 	}
-	return (new_memory);
+	return (grid);
 }
-
