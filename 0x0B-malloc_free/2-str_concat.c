@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	length_s1 = strlen(s1);
 	length_s2 = strlen(s2);
 	total_len = (length_s1 + length_s2);
-	new_memory  = malloc(sizeof(char) * (total_len + 1));
+	new_memory  = (char *)malloc(sizeof(char) * (total_len + 1));
 	if (new_memory == NULL)
 	{
 		return (NULL);
