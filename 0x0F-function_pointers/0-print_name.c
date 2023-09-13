@@ -1,22 +1,6 @@
 #include"function_pointers.h"
 #include<stdio.h>
-#include<stddef.h>
-
-/**
- * myfunction - function to print string
- * @str: string to print
- */
-
-void myfunction(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		putchar(str[i]);
-		i++;
-	}
-}
+#include<stddef>
 
 /**
  * print_name - function to print name using function pointer
