@@ -2,9 +2,9 @@
 
 /**
  * get_bit - a function that returns the value of a bit at a given index
- * @n: integer to find 
+ * @n: integer to find
  * @index: is the index, starting from 0
- * Returns: the value of the bit at index index or -1 if an error occured
+ * Return: the value of the bit at index index or -1 if an error occured
  */
 
 int get_bit(unsigned long int n, unsigned int index)
